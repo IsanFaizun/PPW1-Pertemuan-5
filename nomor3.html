@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Padding sel tabel & Menggunakan list</title>
+    <style type="text/css">
+        ul {
+            list-style: square outside url("loc_resize.png");
+        }
+        td {padding: 1.5cm;}
+        td.value2 {padding: 0.5cm 2.5cm;}
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>
+                Sel dengan padding sama pada setiap sisinya yaitu 1,5 cm
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <td class="value2">
+                Padding atas dan bawah memiliki nilai 0,5 cm, sedangkan padding kanan
+                dan kiri memiliki nilai 2,5 cm.
+            </td>
+        </tr>
+    </table>
+    <p>
+        Disini menggunakan gambar ukuran kecil sebagai bullet untuk list.
+        Properti outside akan menyebabkan list menjadi rapi jika terdiri dari
+        item berupa kalimat panjang dan window browser berukuran kecil
+    </p>
+    <ul>
+        <li>Jakarta</li>
+        <li>Malang</li>
+        <li>Magelang</li>
+    </ul>
+</body>
+</html>

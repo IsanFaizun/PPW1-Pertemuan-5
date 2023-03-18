@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Elemen latar depan dan belakang</title>
+    <style type="text/css">
+        img.x1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+        img.x2 {
+            position: absolute;
+            left: 0;
+            top: 100;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <p><b>Catatan :</b>Browser jadul tidak mendukung properti z-index</p>
+    <h1>Heading ini terhalang oleh gambar</h1>
+    <img class="x1" src="ugm.png" width="100" height="100">
+    <p>
+        Nilai default z-index adalah 0. Z index 1 memiliki prioritas lebih tinggi
+        sehingga ada di depan, sedangkan z index -1 adalah sebaliknya sehingga di
+        belakang.
+    </p>
+    <br>
+    <img class="x2" src="ugm.png" width="100" height="100">
+    <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, deserunt 
+    assumenda dicta quidem deleniti quam sapiente repudiandae unde, 
+    aliquid rem dolorem error modi nobis voluptatibus impedit esse. 
+    Doloribus, corporis ipsum.</b></p>
+</body>
+</html>
